@@ -1,0 +1,149 @@
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("./fonts/TildaSans-Light.ttf") format(.ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/TildaSans-Regular.ttf") format(.ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("./fonts/TildaSans-Medium.ttf") format(.ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 600;
+    src: url("./fonts/TildaSans-Semibold.ttf") format(.ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url("./fonts/TildaSans-Bold.ttf") format(.ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 800;
+    src: url("../assets/fonts/TildaSans/TildaSans-ExtraBold.ttf") format(.ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url("./fonts/TildaSans-Black.ttf") format(.ttf);
+}
+
+.page-body {
+    min-height: 100%;
+    margin: 20px;
+    font-family: 'TildaSans', sans-serif;
+    line-height: 1.4;
+    color: #000;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/*---------------цвет для текста---------------------*/
+
+.color-orange {
+    color: #FF9235;
+}
+
+.color-black {
+    color: #141C3A;
+}
+
+/*------------------------------MAIN-HEADER--------------------*/
+.big-header {
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 81px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*--------------------------------------------------navbar---------------------------*/
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    width: 50%;
+    margin: 45px 0 45px 25%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-link {
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.contact-button {
+    border: 2px solid #FF9235;
+    padding: 9px 22px;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.contact-button:hover {
+    color: #fff;
+    background-color: #FF9235;
+}
+
+.contact-button-text {
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 27px;
+    color: inherit;
+}
+.contact-button-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------------------------------------INTRO-------------------------------------*/
+
+
+
