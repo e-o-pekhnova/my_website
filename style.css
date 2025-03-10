@@ -47,13 +47,13 @@
     src: url("./fonts/TildaSans-Black.ttf") format(.ttf);
 }
 
-.page-body {
-    min-height: 100%;
-    margin: 20px;
-    font-family: 'TildaSans', sans-serif;
-    line-height: 1.4;
-    color: #000;
+body {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
 }
+
+
 
 .container {
     width: 100%;
@@ -155,7 +155,6 @@ nav ul {
     font-size: 36px;
     font-weight: 400;
     line-height: 54px;
-    letter-spacing: 1px;
     opacity: 0.85;
 }
 
@@ -191,3 +190,89 @@ nav ul {
     height: 100%;
     object-fit: cover;
 }
+
+/*--------------------------------PROJECTS----------------------------------------*/
+#skills .big-header {
+    margin: 60px 0;
+}
+
+.skills-table {
+    width: 80%;
+    border-radius: 12px;
+    border: 1px solid #5dd9c8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 70px;
+}
+
+.skills-card {
+    border-left: 1px solid #5dd9c8;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 70px;
+}
+
+.skills-card:first-child {
+    border-left: 0px;
+}
+
+.skills-card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skills-card-icon {
+    width: 72px;
+    height: 72px;
+}
+
+.skills-card-header {
+    padding: 0;
+    margin: 25px 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skills-card-text {
+    font-family: "TildaSans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 12px 0px;
+    width: 100%;
+}
+
+.skills-card-subheader {
+    padding: 0;
+    margin: 12px 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+}
+
+.skills-card-list {
+    list-style-type: none;
+    font-family: "TildaSans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 12px 0px;
+}
+
+.skills-card-list:last-child {
+    padding-bottom: 0;
+}
+
+/*-----------------------стили для секции проекты--------------------*/
