@@ -1,0 +1,48 @@
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("./assets/fonts/TildaSans-Light.ttf") format(ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/TildaSans-Regular.ttf") format(ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("./assets/fonts/TildaSans-Medium.ttf") format(ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 600;
+    src: url("./assets/fonts/TildaSans-Semibold.ttf") format(ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/TildaSans-Bold.ttf") format(ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 800;
+    src: url("../assets/fonts/TildaSans/TildaSans-ExtraBold.ttf") format(ttf);
+}
+
+@font-face {
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url("./assets/fonts/TildaSans-Black.ttf") format(ttf);
+}

@@ -2,82 +2,111 @@
 <html lang="ru" class="page">
 <head>
     <meta charset="utf-8">
+    <meta property="og:locale" content="ru_RU"/>
+    <meta property="og:type" content="website"/>
     <title>Пехнова Екатерина Олеговна</title>
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="Портфолио (пример)" />
+    <meta name="description" content="Описание сайта отображаемое в превью ссылок" />
+    <meta property="og:description" content="Описание сайта отображаемое в превью ссылок" />
+    <meta name="keywords" content="портфолио, веб-разработчик, веб-дизайнер, сайты" />
+    <meta property="og:image" content="https://example.com/assets/img/preview.png" />
+    <meta property="og:image:alt" content="Описание изображения" />
+    <meta property="og:url" content="https://example.com/" />
+    <link rel="canonical" href="https://example.com/" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.75" />
+    <!--    styles  -->
+    <link rel="stylesheet" href="./reset.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./navbar_intro.css">
+    <link rel="stylesheet" href="./about_me.css">
+    <link rel="stylesheet" href="./skills.css">
+    <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./reviews.css">
+    <link rel="stylesheet" href="./footer.css">
+
 </head>
-<body class="page-body">
-    <header class="page-header">
-        <div class="nav-container">
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a class="navbar-link color-black" href="#intro">Главная</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link color-black" href="#about">Обо мне</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link color-black" href="#skills">Навыки и стек</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link color-black" href="#projects">Проекты</a>
-                    </li>
-                </ul>
-                <div class="contact-button-container">
-                    <a class="contact-button color-orange" href="#contacts"><span class="contact-button-text">Связаться со мной</span></a>
-                </div> 
-            </nav>
-        </div>
-    </header> 
+<body tabindex="0" class="page-body">
+    <nav class="enter-from-top">
+        <ul>
+            <li><a class="nav-button color-black" href="#intro">Главная</a></li>
+            <li><a class="nav-button color-black" href="#about">Обо мне</a></li>
+            <li><a class="nav-button color-black" href="#skills">Навыки и стек</a></li>
+            <li><a class="nav-button color-black" href="#projects">Проекты</a></li>
+        </ul>
+        <div class="contact-button-container">
+            <a class="contact-button color-orange animated" href="#contacts">
+                <span class="contact-button-text">Связаться со мной</span>
+            </a>
+        </div> 
+    </nav>
+
+    <nav class="mobile-nav enter-from-top">
+        <details>
+            <summary></summary>
+            <ul>
+                <li><a class="nav-button color-black" href="#intro">Главная</a></li>
+                <li><a class="nav-button color-black" href="#about">Обо мне</a></li>
+                <li><a class="nav-button color-black" href="#skills">Навыки и стек</a></li>
+                <li><a class="nav-button color-black" href="#projects">Проекты</a></li>
+            </ul>
+        </details>
+        <a class="contact-button color-orange" href="#contacts">
+            <span class="contact-button-text">Связаться со мной</span>
+        </a>
+    </nav>
+      
 
     <main>
-        <section class="intro" id="intro">
-            <div class="container">
-                <div class="intro-text-wrapper">
-                    <h2 class="big-header color-black">Пехнова Екатерина</h2>
-                    <p class="desc color-black">Разрабатываю сайты-визитки и рекламные лендинги</p>
-                </div>
-                <div class="intro-image-wrapper">
-                    <img src="./images/main.png" alt="Абстрактное изображение компьютерного монитора">
-                </div>
-            </div>
+        <section class="container" id="intro">
+            <h1 class="big-header color-black fade-in-1">Пехнова Екатерина</h1>
+            <p class="main-desc desc-font color-black fade-in-2">
+                Разрабатываю сайты-визитки и рекламные лендинги
+            </p>
+            <img
+                class="main-pic fade-in-3"
+                src="./assets/images/main.png" 
+                alt="Абстрактное изображение компьютерного монитора"
+            />
+               
+            
         </section>
 
-        <section class="about" id="about"> 
-            <div class="container">
-                <div class="about-text-wrapper background-turquoise">
-                    <h2 class="big-header color-black">Привет, я вэб-разработчик</h2>
-                    <p class="desc about-desc color-black">Я занимаюсь разработкой лендингов и сайтов визиток, поскольку мне нравится видеть результат моей работы.
+        <section class="container" id="about"> 
+           
+                <div class="about-details background-turquoise fade-in-1">
+                    <h2 class="big-header color-black fade-in-2">Привет, я вэб-разработчик</h2>
+                    <p class="desc-font about-desc color-black fade-in-3">Я занимаюсь разработкой лендингов и сайтов визиток, поскольку мне нравится видеть результат моей работы.
                         Мне хочется создавать страницы, которые не только будут визуально привлекать, а также будут удобны в использовании. На данный момент осваиваю HTML, CSS, JavaScript, 
                         а также работу с различными фреймворками. 
-
                     </p>
                 </div>
-                <figure class="about-photo">
-                    <img src="./images/me.png" alt="Фотография автора портфолио">
+                <figure class="about-photo fade-in-4">
+                    <img src="./assets/images/me.png" alt="Фотография автора портфолио">
                 </figure>
-            </div>
         </section>
 
         <section class="container" id="skills">
-                <div class="skills-text-wrapper">
-                    <h2 class="big-header color-black">Навыки и стек технологий</h2>
-                </div>
-                <div class="skills-table">
-                    <div class="skills-card">
-                        <section class="skills-card-section">
-                            <img
-                                class="skills-card-icon"
-                                src="./icons/Development.svg"
-                                alt="Иконка програмный код"
-                            />
-                            <h2 class="skills-card-header color-black">
-                                Разработка сайтов
-                            </h2>
-                            <p class="skills-card-text color-black">
-                                Фронтенд, базы данных
-                            </p>
-                        </section>
+            <h2 class="big-header color-black fade-in-1">
+                Навыки и стек технологий
+            </h2>
+                
+            <div class="skills-table fade-in-2">
+                <div class="skills-card fade-in-2">
+                    <section class="skills-card-section">
+                        <img
+                            class="skills-card-icon"
+                            src="./assets/icons/Development.svg"
+                            alt="Иконка програмный код"
+                        />
+                        <h2 class="skills-card-header color-black">
+                            Разработка сайтов
+                        </h2>
+                        <p class="skills-card-text color-black">
+                            Фронтенд, базы данных
+                        </p>
+                    </section>
 
                         <section class="skills-card-section">
                             <h3 class="skills-card-subheader color-orange">
@@ -102,11 +131,11 @@
                         </section>
                     </div>
 
-                    <div class="skills-card">
+                    <div class="skills-card fade-in-3">
                         <section class="skills-card-section">
                             <img
                                 class="skills-card-icon"
-                                src="./icons/Design.svg"
+                                src="./assets/icons/Design.svg"
                                 alt="Иконка компьютер с кисточкой"
                             />
                             <h2 class="skills-card-header color-black">
@@ -125,15 +154,16 @@
                             </h3>
                             <ul class="skills-card-list color-black">
                                 <li>Figma</li>
+                                <li>Miro</li>
                             </ul>
                         </section>
                     </div>
 
-                    <div class="skills-card">
+                    <div class="skills-card fade-in-4">
                         <section class="skills-card-section">
                             <img
                                 class="skills-card-icon"
-                                src="./icons/SoftSkills.svg"
+                                src="./assets/icons/SoftSkills.svg"
                                 alt="Иконка сообщений"
                             />
                             <h2 class="skills-card-header color-black">
@@ -159,81 +189,87 @@
                 </div>
         </section>
         
-        <section class="projects" id="projects">
-            <div class="container">
-                <h2 class="big-header color-black">Проекты</h2>             
-                <div class="projects-display">
-                    <figure class="projects-card">
-                        <a class="projects-link" href="https://github.com/e-o-pekhnova/S.P.-landing-.git">
-                            <img src="./images/landing_1.png" alt="Скриншот проекта">
-                        </a>
-                    </figure>
-                    <figure class="projects-card">
-                        <a class="projects-link" href="https://e-o-pekhnova.github.io/green-corp-landing/">
-                            <img src="./images/green_corp_landing.png" alt="Скриншот проекта">
-                        </a>
-                    </figure>
-                    <figure class="projects-card">
-                        <a>
-                            <img>
-                        </a>
-                    </figure>
-                    <figure class="projects-card">
-                        <a>
-                            <img>
-                        </a>
-                    </figure>
-                    <figure class="projects-card">
-                        <a>
-                            <img>
-                        </a>
-                    </figure>
-                    <figure class="projects-card">
-                        <a>
-                            <img>
-                        </a>
-                    </figure>
-                </div>
-                <a href="https://github.com/e-o-pekhnova" class="projects-button color-orange">
-                    <span class="projects-button-text">Посмотреть на GitHub</span>
-                </a>
+        <section class="container" id="projects">            
+            <h1 class="big-header color-black fade-in-1">
+                Проекты
+            </h1>
+
+            <div class="projects-display fade-in-2">
+                <figure class="projects-card">
+                    <a class="animated" href="https://github.com/e-o-pekhnova/S.P.-landing-.git">
+                        Посмотреть сайт 
+                    </a>
+                </figure>
+                <figure class="projects-card">
+                    <a class="animated" href="https://e-o-pekhnova.github.io/green-corp-landing/">
+                        Посмотреть сайт
+                    </a>
+                </figure>
+                <figure class="projects-card">
+                    <a class="animated" href="https://github.com/e-o-pekhnova/layout_orange.git">
+                         Посмотреть сайт
+                    </a>
+                </figure>
+                <figure class="projects-card">
+                    <a>
+                        <img>
+                    </a>
+                </figure>
+                <figure class="projects-card">
+                    <a>
+                        <img>
+                    </a>
+                </figure>
+                <figure class="projects-card">
+                    <a>
+                        <img>
+                    </a>
+                </figure>
             </div>
+            <a href="https://github.com/e-o-pekhnova" class="projects-button color-orange fade-in-3 animated">
+                <span class="projects-button-text">Посмотреть на GitHub</span>
+            </a>
+            
         </section>
 
         <section class="container" id="contacts">
-            <div class="contacts-details container background-turquoise">
-                <h3 class="color-black big-header">Хотите заказать сайт?</h3>
-                <p class="desc contacts-details-text">Напишите мне, чтобы обсудить детали.</p>
+            <div class="contacts-details container background-turquoise fade-in-1">
+                <h1 class="big-header color-black fade-in-2">
+                    Хотите заказать сайт?
+                </h1>
+                <p class="desc-font color-black fade-in-2 contacts-details-text">
+                    Напишите мне, чтобы обсудить детали.
+                </p>
             </div>
 
-            <div class="form-container">
+            <div class="form-container" id="contact-form">
                 <img 
-                    class="form-photo" 
-                    src="./images/form.png" 
+                    class="form-photo fade-in-3" 
+                    src="./assets/images/form.png" 
                     alt="компьютер с тегами"
-                  />
+                />
             
-                <form class="form">
+                <form class="form fade-in-4">
                     <fieldset class="form-sender-data">
                         <label class="form-field" for="name">
-                            <span class="form-label color-black">Имя</span>
-                            <input class="form-input color-black" type="text" name="name"/>
+                            <span class="form-label">Имя</span>
+                            <input class="form-input" type="text" name="name"/>
                         </label>
                         <label class="form-field" for="email">
-                            <span class="form-label color-black">E-mail</span>
-                            <input class="form-input color-black" type="email" name="email"/>
+                            <span class="form-label">E-mail</span>
+                            <input class="form-input" type="email" name="email"/>
                         </label>
                     </fieldset>
 
                     <fieldset class="form-text-body">
                         <label class="form-field" for="body">
                             <span class="form-label color-black">Расскажите про свою задачу</span>
-                            <textarea class="form-input color-black" name="body"></textarea>
+                            <textarea class="form-input" name="body"></textarea>
                         </label>
                     </fieldset>
 
                     <fieldset class="form-submit">
-                        <button class="form-button color-orange" type="submit">
+                        <button class="form-button color-orange animated" type="submit">
                             <span class="form-button-text">Отправить</span>
                         </button>
                     </fieldset>
@@ -242,48 +278,50 @@
         </section>
 
         <section class="container" id="reviews">
-            <h2 class="big-header color-black">Отзывы</h2>
-            <p class="desc color-black reviews-desc">
+            <h2 class="big-header color-black fade-in-1">
+                Отзывы
+            </h2>
+            <p class="desc-font reviews-desc color-black fade-in-2">
                 Люди с которыми я работала, остаются довольны результатом.
             </p>
 
             <figure class="reviews-card">
-                <div class="reviews-photo">
+                <div class="reviews-photo fade-in-3">
                     <img 
                         alt="Фото автора отзыва"
-                        src="./images/photo.png"
+                        src="./assets/images/photo.png"
                     />
                 </div>
-                <figcaption class="reviews-caption">
+                <figcaption class="reviews-caption fade-in-4">
                     <p class="reviews-text color-black">Текст отзыва</p>
                     <p class="reviews-info color-black">Имя Фамилия</p>
                     <p class="reviews-info color-black">Компания, город</p>
                 </figcaption>
             </figure>
 
-            <div class="reviews-toggle">
-                <button class="reviews-toggle-button" type="button">
+            <div class="reviews-toggle fade-in-4">
+                <button class="reviews-toggle-button animated" type="button">
                     <img
                         class="reviews-toggle-arrow"
-                        src="./icons/Arrow-L.svg"
+                        src="./assets/icons/Arrow-L.svg"
                         alt="Стрелка влево"
                     />
                     <img
                         class="reviews-toggle-arrow icon-hover"
-                        src="./icons/Arrow-L-white.svg  "
+                        src="./assets/icons/Arrow-L-white.svg  "
                         alt="Стрелка влево"
                     />
                 </button>
                 
-                <button class="reviews-toggle-button" type="button">
+                <button class="reviews-toggle-button animated" type="button">
                     <img
                         class="reviews-toggle-arrow"
-                        src="./icons/Arrow-R.svg"
+                        src="./assets/icons/Arrow-R.svg"
                         alt="Стрелка вправо"
                     />
                     <img
                         class="reviews-toggle-arrow icon-hover"
-                        src="./icons/Arrow-R-white.svg"
+                        src="./assets/icons/Arrow-R-white.svg"
                         alt="Стрелка вправо"
                     />
                 </button>
@@ -291,8 +329,8 @@
         </section>
     </main>
 
-    <aside class="container" id="letstalk">
-        <div class="letstalk-box">
+    <aside class="container fade-in-1" id="letstalk">
+        <div class="letstalk-box fade-in-2">
             <h2 class="letstalk-header">
                 Договоримся о сотрудничестве
             </h2>
@@ -308,55 +346,49 @@
         </div>
     </aside>
 
-    <footer>
-        <div class="footer">
-            <a class="footer-container" href="https://t.me/Katja_pech">
+    <footer class="fade-in-1">
+        <div class="footer-socials fade-in-2">
+            <a class="footer-social-container animated" href="https://t.me/Katja_pech">
                 <img 
-                    class="footer-icon"
-                    src="./icons/TG.svg"
+                    class="footer-social-icon"
+                    src="./assets/icons/TG.svg"
                 />
                 <img 
-                    class="footer-icon icon-hover"
-                    src="./icons/TG-white.svg"
-                />
-            </a>
-            <a class="footer-container" href="#">
-                <img 
-                    class="footer-icon"
-                    src="./icons/Habr.svg"
-                />
-                <img 
-                    class="footer-icon icon-hover"
-                    src="./icons/Habr-white.svg"
+                    class="footer-social-icon icon-hover"
+                    src="./assets/icons/TG-white.svg"
                 />
             </a>
-            <a class="footer-container" href="mailto:kamynina.cat@gmail.com">
+            <a class="footer-social-container" href="#">
                 <img 
-                    class="footer-icon"
-                    src="./icons/Email.svg"
+                    class="footer-social-icon"
+                    src="./assets/icons/Habr.svg"
                 />
                 <img 
-                    class="footer-icon icon-hover"
-                    src="./icons/Email-white.svg"
+                    class="footer-social-icon icon-hover"
+                    src="./assets/icons/Habr-white.svg"
+                />
+            </a>
+            <a class="footer-social-container" href="mailto:kamynina.cat@gmail.com">
+                <img 
+                    class="footer-social-icon"
+                    src="./assets/icons/Email.svg"
+                />
+                <img 
+                    class="footer-social-icon icon-hover"
+                    src="./assets/icons/Email-white.svg"
                 />
             </a>
         </div>
         
-        <p class="footer-links color-black">Изображения и иконки:<br>
+        <p class="footer-links">Изображения и иконки:<br>
             <a href="https://ru.freepik.com/free-vector/
             software-integration-conceptillustration_18352184.htm#page=2&query=вебразработка&position=7&from_view=search&track=sp h">Изображение-1 от Storyset на Freepik.</a> 
-            <br>
             <a href="https://ru.freepik.com/free-vector/
             code-typing-conceptillustration_10259340.htm#&position=12&from_vie w=author">Изображение-2 от Storyset на Freepik.</a> 
-            <br>
             <a href="https://www.flaticon.com/ru/free- icons/html" title="html иконки">Иконка "Html" от Frey Wazza на Flaticon.</a> 
-            <br>
             <a href="https://www.flaticon.com/ru/free- icons/" title="телеграмма иконки">Иконка «Телеграм» от Freepik на Flaticon.</a>
-            <br>
             <a href="https://www.flaticon.com/ru/free- icons/" title="общение иконки">Иконка «Общение» от Ilham Fitrotul Hayat на Flaticon.</a> 
-            <br>
             <a href="https://www.flaticon.com/ru/free- icons/-" title="Дизайн сайта иконки">Иконка «Дизайн сайта» от Freepik на Flaticon.</a> 
-            <br>
             <a href="https://www.flaticon.com/ru/free- icons/-" title="Эл. адрес иконки">Иконка «Эл.адрес» от Those Icons на Flaticon.</a>
         </p>
     </footer>          
