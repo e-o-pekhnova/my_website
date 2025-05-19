@@ -26,8 +26,14 @@ nav.mobile-nav {
 .mobile-nav summary {
     width: 49px;
     height: 49px;
-    background-image: url(./assets/icons/Menu.svg);
+    background-image: url("./assets/icons/Menu.svg");
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mobile-nav summary::-webkit-details-marker {
+    display: none;
 }
 
 .mobile-nav details[open] {
@@ -38,8 +44,8 @@ nav.mobile-nav {
     padding: 0;
 }
 
-.mobile-nav details[open] summary {
-    background-image: url(./assets/icons/Menu_hover.svg);
+.mobile-nav details[open] > summary {
+    background-image: url("./assets/icons/Menu_active.svg");
 } 
 
 

@@ -19,7 +19,6 @@
     box-sizing: border-box;
     border: 3px solid var(--purpl);
     border-radius: 12px;
-    background: url(./assets/images/landing_1.png), var(--white);
     background-size: cover;
     overflow: hidden;
     z-index: 4;
@@ -27,6 +26,27 @@
                 background  0.3 ease-in,
                 box-shadow  0.3 ease-in,
                 z-index     0.3 ease-out;
+}
+
+.project_1 {
+    background: url(./assets/images/landing_1.png), var(--white);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project_2 {
+    background: url(./assets/images/green_corp_landing.png), var(--white);
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project_3 {
+    background: url(./assets/images/layout_orange.png), var(--white);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .projects-card:hover {
@@ -59,11 +79,16 @@
 
 .projects-card-caption a {
     font: var(--text-bold-button);
-    color: var(--color-whit);
+    color: var(--white);
     margin-top: 30px;
     padding: 9px 22px;
-    border: 2px solid var(--color-whit);
+    border: 2px solid var(--white);
     border-radius: 15px;
+}
+
+.projects-card-caption a:hover {
+    background-color: var(--white);
+    color: var(--purpl);
 }
 
 .projects-button {
